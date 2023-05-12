@@ -1,0 +1,92 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+10.1.11.240 tir-0-3.eth tir-0-3
+10.1.11.246 tir-0-7.eth tir-0-7
+10.1.11.251 tir-0-9.eth tir-0-9
+10.1.11.252 tir-0-11.eth tir-0-11
+10.1.11.250 tir-0-13.eth tir-0-13
+10.1.11.249 tir-0-15.eth tir-0-15 
+192.168.1.249 tir-0-15.ipmi
+192.168.1.250 tir-0-13.ipmi
+192.168.1.242 tir-1-13.ipmi
+192.168.1.252 tir-1-11.ipmi
+10.1.11.248 tir-0-17.eth tir-0-17
+10.1.11.247 tir-0-19.eth tir-0-19
+10.1.11.244 tir-0-32.eth tir-0-32
+10.1.11.243 tir-0-36.eth tir-0-36
+10.1.11.236 tir-1-7.eth tir-1-7
+10.1.11.253 tir-1-11.eth tir-1-11
+10.1.11.242 tir-1-13.eth tir-1-13
+10.1.11.241 tir-1-18.eth tir-1-18
+10.1.11.1 tir.eth tir
+10.1.11.254 tir-network-0-42.eth tir-network-0-42
+10.1.11.2 tir-nas-0-24.eth tir-nas-0-24
+128.2.204.11 tir.lti.cs.cmu.edu
+172.16.11.2 tir-nas-0-24.ib
+172.16.11.1 tir.lti.cs.cmu.edu.ib
+172.16.11.246 tir-0-7.ib
+172.16.11.251 tir-0-9.ib
+172.16.11.252 tir-0-11.ib
+172.16.11.250 tir-0-13.ib
+172.16.11.249 tir-0-15.ib
+172.16.11.243 tir-0-36.ib
+172.16.11.253 tir-1-11.ib
+172.16.11.242 tir-1-13.ib
+172.16.11.244 tir-0-32.ib
+172.16.11.241 tir-1-18.ib
+172.16.11.240 tir-0-3.ib
+172.16.11.247 tir-0-19.ib
+172.16.11.236 tir-1-7.ib
+172.16.11.248 tir-0-17.ib
+10.1.11.239 tir-1-23.eth tir-1-23
+172.16.11.239 tir-1-23.ib
+10.1.11.245 tir-1-28.eth tir-1-28
+172.16.11.245 tir-1-28.ib
+10.1.11.237 tir-1-36.eth tir-1-36
+172.16.11.237 tir-1-36.ib
+10.1.11.238 tir-1-32.eth tir-1-32
+172.16.11.238 tir-1-32.ib
+10.1.11.249 tir-0-15.eth tir-0-15
+[I 2023-05-08 17:21:24.848 ServerApp] Package jupyterlab took 0.0001s to import
+[I 2023-05-08 17:21:24.857 ServerApp] Package jupyter_server_fileid took 0.0082s to import
+[I 2023-05-08 17:21:24.881 ServerApp] Package jupyter_server_terminals took 0.0230s to import
+[I 2023-05-08 17:21:25.555 ServerApp] Package jupyter_server_ydoc took 0.6730s to import
+[I 2023-05-08 17:21:25.557 ServerApp] Package nbclassic took 0.0001s to import
+[W 2023-05-08 17:21:25.565 ServerApp] A `_jupyter_server_extension_points` function was not found in nbclassic. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-05-08 17:21:25.566 ServerApp] Package notebook_shim took 0.0001s to import
+[W 2023-05-08 17:21:25.567 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2023-05-08 17:21:25.585 ServerApp] jupyter_server_fileid | extension was successfully linked.
+[I 2023-05-08 17:21:25.598 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2023-05-08 17:21:25.609 ServerApp] jupyter_server_ydoc | extension was successfully linked.
+[I 2023-05-08 17:21:25.623 ServerApp] jupyterlab | extension was successfully linked.
+[I 2023-05-08 17:21:25.633 ServerApp] nbclassic | extension was successfully linked.
+[I 2023-05-08 17:21:25.655 ServerApp] Writing Jupyter server cookie secret to /home/sachink/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2023-05-08 17:21:27.217 ServerApp] notebook_shim | extension was successfully linked.
+[I 2023-05-08 17:21:27.443 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2023-05-08 17:21:27.443 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager
+[I 2023-05-08 17:21:27.444 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /projects/tir6/general/sachink/glauber/tauLDR
+[I 2023-05-08 17:21:27.444 FileIdExtension] ArbitraryFileIdManager : Configured database path: /home/sachink/.local/share/jupyter/file_id_manager.db
+[I 2023-05-08 17:21:27.445 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.
+[I 2023-05-08 17:21:27.445 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE
+[I 2023-05-08 17:21:27.508 FileIdExtension] Attached event listeners.
+[I 2023-05-08 17:21:27.508 ServerApp] jupyter_server_fileid | extension was successfully loaded.
+[I 2023-05-08 17:21:27.510 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2023-05-08 17:21:27.511 ServerApp] jupyter_server_ydoc | extension was successfully loaded.
+[I 2023-05-08 17:21:27.512 LabApp] JupyterLab extension loaded from /projects/tir1/users/sachink/data/anaconda3/envs/2022/lib/python3.8/site-packages/jupyterlab
+[I 2023-05-08 17:21:27.513 LabApp] JupyterLab application directory is /projects/tir1/users/sachink/data/anaconda3/envs/2022/share/jupyter/lab
+[I 2023-05-08 17:21:27.519 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2023-05-08 17:21:27.531 ServerApp] nbclassic | extension was successfully loaded.
+[I 2023-05-08 17:21:27.532 ServerApp] Serving notebooks from local directory: /projects/tir6/general/sachink/glauber/tauLDR
+[I 2023-05-08 17:21:27.532 ServerApp] Jupyter Server 2.5.0 is running at:
+[I 2023-05-08 17:21:27.532 ServerApp] http://tir-0-32.eth:8888/lab?token=a11f6f6111b1bc966d8534d9c16e936ac4dc4d65e8c5fa2c
+[I 2023-05-08 17:21:27.532 ServerApp]     http://127.0.0.1:8888/lab?token=a11f6f6111b1bc966d8534d9c16e936ac4dc4d65e8c5fa2c
+[I 2023-05-08 17:21:27.533 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2023-05-08 17:21:27.611 ServerApp] No web browser found: Error('could not locate runnable browser').
+[C 2023-05-08 17:21:27.612 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///home/sachink/.local/share/jupyter/runtime/jpserver-120318-open.html
+    Or copy and paste one of these URLs:
+        http://tir-0-32.eth:8888/lab?token=a11f6f6111b1bc966d8534d9c16e936ac4dc4d65e8c5fa2c
+        http://127.0.0.1:8888/lab?token=a11f6f6111b1bc966d8534d9c16e936ac4dc4d65e8c5fa2c
+slurmstepd: error: *** JOB 614622 ON tir-0-32 CANCELLED AT 2023-05-08T18:23:45 ***

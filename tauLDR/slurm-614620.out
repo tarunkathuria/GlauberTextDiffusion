@@ -1,0 +1,50 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+10.1.11.240 tir-0-3.eth tir-0-3
+10.1.11.246 tir-0-7.eth tir-0-7
+10.1.11.251 tir-0-9.eth tir-0-9
+10.1.11.252 tir-0-11.eth tir-0-11
+10.1.11.250 tir-0-13.eth tir-0-13
+10.1.11.249 tir-0-15.eth tir-0-15 
+192.168.1.249 tir-0-15.ipmi
+192.168.1.250 tir-0-13.ipmi
+192.168.1.242 tir-1-13.ipmi
+192.168.1.252 tir-1-11.ipmi
+10.1.11.248 tir-0-17.eth tir-0-17
+10.1.11.247 tir-0-19.eth tir-0-19
+10.1.11.244 tir-0-32.eth tir-0-32
+10.1.11.243 tir-0-36.eth tir-0-36
+10.1.11.236 tir-1-7.eth tir-1-7
+10.1.11.253 tir-1-11.eth tir-1-11
+10.1.11.242 tir-1-13.eth tir-1-13
+10.1.11.241 tir-1-18.eth tir-1-18
+10.1.11.1 tir.eth tir
+10.1.11.254 tir-network-0-42.eth tir-network-0-42
+10.1.11.2 tir-nas-0-24.eth tir-nas-0-24
+128.2.204.11 tir.lti.cs.cmu.edu
+172.16.11.2 tir-nas-0-24.ib
+172.16.11.1 tir.lti.cs.cmu.edu.ib
+172.16.11.246 tir-0-7.ib
+172.16.11.251 tir-0-9.ib
+172.16.11.252 tir-0-11.ib
+172.16.11.250 tir-0-13.ib
+172.16.11.249 tir-0-15.ib
+172.16.11.243 tir-0-36.ib
+172.16.11.253 tir-1-11.ib
+172.16.11.242 tir-1-13.ib
+172.16.11.244 tir-0-32.ib
+172.16.11.241 tir-1-18.ib
+172.16.11.240 tir-0-3.ib
+172.16.11.247 tir-0-19.ib
+172.16.11.236 tir-1-7.ib
+172.16.11.248 tir-0-17.ib
+10.1.11.239 tir-1-23.eth tir-1-23
+172.16.11.239 tir-1-23.ib
+10.1.11.245 tir-1-28.eth tir-1-28
+172.16.11.245 tir-1-28.ib
+10.1.11.237 tir-1-36.eth tir-1-36
+172.16.11.237 tir-1-36.ib
+10.1.11.238 tir-1-32.eth tir-1-32
+172.16.11.238 tir-1-32.ib
+10.1.11.249 tir-0-15.eth tir-0-15
+/var/spool/slurmd/job614620/slurm_script: line 10: jupyter: command not found
