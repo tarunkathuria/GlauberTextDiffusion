@@ -45,7 +45,7 @@ sampler:
   finish_strat: mean
   initial_dist: uniform
   min_t: 0.001
-  name: ConditionalTauLeaping
+  name: TauLeaping
   num_steps: 100
 save_location:
 saving:
