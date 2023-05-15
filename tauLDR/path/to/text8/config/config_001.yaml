@@ -1,0 +1,64 @@
+data:
+  S: 129
+  batch_size: 64
+  name: Text8
+  path:
+  shape:
+  - 256
+  shuffle: true
+device: cuda
+distributed: false
+experiment_name: uniform_rate
+loss:
+  condition_dim: 32
+  eps_ratio: 1.0e-09
+  min_time: 0.01
+  name: GenericAux
+  nll_weight: 0.001
+  one_forward_pass: true
+model:
+  Q_sigma: 20.0
+  T: 1000
+  d_model: 128
+  dim_feedforward: 2048
+  dropout: 0.1
+  ema_decay: 0.9999
+  name: UniformRateSequenceTransformerEMA
+  num_heads: 8
+  num_layers: 6
+  num_output_FFresiduals: 2
+  rate_const: 0.03
+  rate_sigma: 3.0
+  sigma_max: 100.0
+  sigma_min: 1.0
+  temb_dim: 128
+  time_base: 0.5
+  time_exponential: 1000.0
+  time_scale_factor: 1000
+  use_one_hot_input: true
+num_gpus: 1
+optimizer:
+  lr: 0.0002
+  name: Adam
+sampler:
+  eps_ratio: 1.0e-09
+  finish_strat: mean
+  initial_dist: uniform
+  min_t: 0.001
+  name: ConditionalTauLeaping
+  num_steps: 100
+save_location:
+saving:
+  checkpoint_archive_freq: 20000000
+  checkpoint_freq: 1000
+  enable_preemption_recovery: false
+  log_low_freq: 1000
+  low_freq_loggers: []
+  num_checkpoints_to_keep: 2
+  preemption_start_day_YYYYhyphenMMhyphenDD: '2022-04-16'
+  prepare_to_resume_after_timeout: false
+training:
+  clip_grad: true
+  n_iters: 1000000
+  train_step_name: Standard
+  warmup: 5000
