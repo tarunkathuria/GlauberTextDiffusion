@@ -1,5 +1,5 @@
 data:
-  S: 129
+  S: 27
   batch_size: 64
   name: Text8
   path:
