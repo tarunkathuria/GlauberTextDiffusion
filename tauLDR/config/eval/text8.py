@@ -2,7 +2,7 @@ import ml_collections
 
 def get_config():
 
-    pianoroll_dataset_path = 'path/to/text8'
+    pianoroll_dataset_path = 'datasets/text8'
     model_location = 'path/to/text8/checkpoints/ckpt_0000999999.pt'
     model_config_location = 'path/to/text8/config/config_001.yaml'
 
@@ -22,14 +22,14 @@ def get_config():
     config.data = data = ml_collections.ConfigDict()
     data.name = 'Text8'
     data.path = pianoroll_dataset_path + '/train.npy'
-    data.S = 129
+    data.S = 27
     data.batch_size = 64 #128
     data.shuffle = True
-    data.shape = [256]
+    data.shape = [20]
 
 
     config.sampler = sampler = ml_collections.ConfigDict()
-    sampler.name = 'ConditionalTauLeaping' # ConditionalTauLeaping or ConditionalPCTauLeaping
+    sampler.name = 'TauLeaping' # ConditionalTauLeaping or ConditionalPCTauLeaping
     sampler.num_steps = 1000
     sampler.min_t = 0.01
     sampler.eps_ratio = 1e-9

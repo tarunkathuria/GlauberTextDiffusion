@@ -1,15 +1,15 @@
-import matplotlib
+# import matplotlib
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import ml_collections
 import sys
-sys.path.insert(0, '../')
+# sys.path.insert(0, '../')
 from config.eval.text8 import get_config as get_eval_config
 import lib.utils.bookkeeping as bookkeeping
 from pathlib import Path
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 import lib.utils.utils as utils
 import lib.models.models as models
@@ -19,7 +19,9 @@ import lib.datasets.dataset_utils as dataset_utils
 import lib.sampling.sampling as sampling
 import lib.sampling.sampling_utils as sampling_utils
 
-%matplotlib inline
+import string
+
+# %matplotlib inline
 
 eval_cfg = get_eval_config()
 train_cfg = bookkeeping.load_ml_collections(Path(eval_cfg.train_config_path))
@@ -43,7 +45,7 @@ model.eval()
 dataset = dataset_utils.get_dataset(eval_cfg, device)
 data = dataset.data
 test_dataset = np.load(eval_cfg.sampler.test_dataset)
-condition_dim = eval_cfg.sampler.condition_dim
+# condition_dim = eval_cfg.sampler.condition_dim
 # descramble_key = np.loadtxt(eval_cfg.pianoroll_dataset_path + '/descramble_key.txt')
 
 # def descramble(samples):
@@ -54,8 +56,9 @@ condition_dim = eval_cfg.sampler.condition_dim
 # -------------- Sample the model ------------------
 num_samples = 1
 # test_data_idx = 8
-# conditioner = torch.from_numpy(test_dataset[test_data_idx, 0:condition_dim]).to(device).view(1, condition_dim)
+# conditioner = torch.from_numpy(test_dataset[test_data_idx, 0:condition_dim]).to(device).view(1, condition_dim
 sampler = sampling_utils.get_sampler(eval_cfg)
+# print(sampler)
 samples, x_hist, x0_hist = sampler.sample(model, 1, 10) 
 
 print(samples)
@@ -65,11 +68,6 @@ wordmap[" "] = 26
 
 id2word = {id: char for char, id in wordmap.items()}
 
-## TODO: 
-#convert int sample to text using id2word
-# samples, x_hist, x0_hist = descramble(samples), descramble(x_hist), descramble(x0_hist)
+output = [id2word[id] for id in samples[0]]
 
-# idx = 0
-# plt.scatter(np.arange(256), samples[idx, :], alpha=0.5)
-# plt.scatter(np.arange(256), descrambled_test_dataset[test_data_idx, :], alpha=0.5)
-# plt.show()
+print("".join(output))

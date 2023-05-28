@@ -34,8 +34,10 @@ class TauLeaping():
 
     def sample(self, model, N, num_intermediates):
         t = 1.0
-        C,H,W = self.cfg.data.shape
-        D = C*H*W
+        Ds = self.cfg.data.shape
+        D = 1
+        for d in Ds:
+            D = D*d
         S = self.cfg.data.S
         scfg = self.cfg.sampler
         num_steps = scfg.num_steps
